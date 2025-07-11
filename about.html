@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-dark text-white">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="icon" href="favicon.ico">
+
+    <style>
+      .carousel-item {
+        padding: 40PX 20px;
+      }
+      .carousel-image {
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(255,0, 0,0.4), 0 6px 20px rgba(0,0, 0,0.5)
+
+      }
+      h2 {
+        color: red;
+        font-weight: bold;
+
+      }
+      h2:hover {
+        color: blue;
+      }
+      p {
+        color:black;
+      }
+      p:hover {
+        color: red;
+      }
+      footer {
+        background-color: black;
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+      }
+      ul li p {
+        display: flex;
+        justify-content: center;
+      }
+      .footer {
+        background-color: red;
+        color:#fff;
+        padding: 40px 0;
+      }
+      .footer a {
+        color: #fff;
+        margin: 0 10px;
+        font-size: 1.4rem;
+
+      }
+      
+    </style>
+
+      
+      
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="bi bi-file-person-fill"></i>About Us</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="restaurants.html">restaurants</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">contact us</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="menu.html">menu</a>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container my-5">
+    <h2 class="text-center mb-4"> Why Choose Us?</h2>
+    <div id="about-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+
+        <div class="carousel-item active">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWhS5lj54NGLXqbAgPYfW-OM0qtcX7G0awAQ&s" class="carousel-image">
+            </div>
+            <div class="col-md-6 text-end">
+              <h2>Popular Food</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi tenetur vel autem, provident placeat temporibus rem laboriosam quasi aliquam incidunt minus explicabo! Pariatur, ipsa iure! Facilis ipsa adipisci nostrum repellat!</p>
+
+            </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <img src="https://cdn.pixabay.com/photo/2020/08/27/07/31/restaurant-5521372_640.jpg" class="carousel-image">
+              </div>
+              <div class="col-md-6 text-end">
+                <h2>Popular restaurants</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi tenetur vel autem, provident placeat temporibus rem laboriosam quasi aliquam incidunt minus explicabo! Pariatur, ipsa iure! Facilis ipsa adipisci nostrum repellat!</p>
+  
+              </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCIGS2ej-Fcql9bmoL3MIwY0mlGETg-jwC_uzOcigOcENLHhdhBTVFn6ygOIgRLvByHd0&usqp=CAU" class="carousel-image">
+                </div>
+                <div class="col-md-6 text-end">
+                  <h2>About Menu</h2>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi tenetur vel autem, provident placeat temporibus rem laboriosam quasi aliquam incidunt minus explicabo! Pariatur, ipsa iure! Facilis ipsa adipisci nostrum repellat!</p>
+    
+                </div>
+                </div>
+              </div>
+
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#about-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#about-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+
+      </div>
+    </div>
+    <footer class="footer text-center">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-8">
+            <p class="mb-3">Follow us in Social media</p>
+            <div class="d-flex justify-content-center">
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+              <a href="#"><i class="bi bi-telegram"></i></a>
+
+            </div>
+            <p class="mt-4 small">ALL Rights reseved</p>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
+
+</html>
